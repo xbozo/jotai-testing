@@ -3,7 +3,7 @@
 - A definição de um atom (variável global) pode ser feita em um client ou server component.
 - Ou seja, pode ser definida em uma página, em server-side, em um arquivo lib.ts a parte, ou em um client component.
 
-```
+```ts
 // atoms.ts
 import { atom } from 'jotai'
 
@@ -14,7 +14,7 @@ export const atomCounter = atom(1)
 
 As variáveis globais (atoms) só podem ser usadas em client components, já que o hook useAtom é como se fosse um useState comum.
 
-```
+```tsx
 // Counter.tsx
 import { useAtom } from 'jotai'
 
